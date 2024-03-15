@@ -126,7 +126,6 @@ programs.fish.enable = true;
   scrounge-ntfs
   github-desktop
   wget
-  pkgsi686Linux.gperftools
   (steam.override { extraLibraries = pkgs: [ pkgs.gperftools ]; })
   pinta
   git
