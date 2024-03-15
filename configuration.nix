@@ -109,8 +109,6 @@ programs.steam.enable = true;
       python3
       motrix
       winePackages.stableFull
-      winetricks
-      protontricks
       ];
       shell = pkgs.fish;
  };
