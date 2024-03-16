@@ -13,7 +13,7 @@
   # Bootloader
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "/dev/sdb";
-  boot.loader.grub.useOSProber = true;
+  boot.loader.grub.useOSProber = false;
 
   networking.hostName = "nixos"; # Define your hostname.
  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -129,6 +129,7 @@ programs.fish.enable = true;
   (steam.override { extraLibraries = pkgs: [ pkgs.gperftools ]; })
   pinta
   git
+  openjdk
   google-chrome
   oh-my-posh
   oh-my-fish
