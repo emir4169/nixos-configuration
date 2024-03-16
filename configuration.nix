@@ -105,6 +105,8 @@ programs.steam.enable = true;
       i3
       python311Packages.pillow
       bun
+      qemu_full
+      raylib
       rare
       python3
       motrix
@@ -136,6 +138,7 @@ programs.fish.enable = true;
   etcher
   vlc
   libvlc
+  gcc_multi
   ];
 
               nixpkgs.config.permittedInsecurePackages = [
