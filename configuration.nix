@@ -131,6 +131,7 @@ programs.fish.enable = true;
   (steam.override { extraLibraries = pkgs: [ pkgs.gperftools ]; })
   pinta
   git
+  qtemu
   openjdk
   google-chrome
   oh-my-posh
