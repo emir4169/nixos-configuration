@@ -133,8 +133,14 @@ programs.fish.enable = true;
   google-chrome
   oh-my-posh
   oh-my-fish
+  etcher
+  vlc
+  libvlc
   ];
 
+              nixpkgs.config.permittedInsecurePackages = [
+                "electron-19.1.9"
+              ];
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
