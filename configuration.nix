@@ -123,8 +123,6 @@ programs.fish.enable = true;
   environment.systemPackages = with pkgs; [
   vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   neovim
-  vmware-workstation
-  open-vm-tools
   gparted
   ntfs3g
   scrounge-ntfs
@@ -135,6 +133,7 @@ programs.fish.enable = true;
   git
   qtemu
   openjdk
+  thunderbird
   google-chrome
   oh-my-posh
   oh-my-fish
