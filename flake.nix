@@ -6,7 +6,7 @@
 
   outputs = {nixpkgs, ...}: {
     nixosConfigurations = {
-      hostname = "nixos" {
+      hostname = nixpkgs.lib.nixosSystem {
         modules = [
           ./configuration.nix
         ];
