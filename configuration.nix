@@ -126,6 +126,7 @@ programs.fish.enable = true;
   ntfs3g
   scrounge-ntfs
   github-desktop
+  exfat
   wget
   (steam.override { extraLibraries = pkgs: [ pkgs.gperftools ]; })
   pinta
