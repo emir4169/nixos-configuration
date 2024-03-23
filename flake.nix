@@ -3,10 +3,10 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
-
+  
   outputs = {nixpkgs, ...}: {
     nixosConfigurations = {
-      hostname = nixpkgs.lib.nixosSystem {
+      hostname = "nixos" {
         modules = [
           ./configuration.nix
         ];
