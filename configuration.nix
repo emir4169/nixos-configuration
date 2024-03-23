@@ -116,16 +116,6 @@ programs.steam.enable = true;
 programs.fish.enable = true;
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-  nixpkgs.overlays =
-  let
-    # Change this to a rev sha to pin
-    moz-rev = "master";
-    moz-url = builtins.fetchTarball { url = "https://github.com/mozilla/nixpkgs-mozilla/archive/${moz-rev}.tar.gz";};
-    nightlyOverlay = (import "${moz-url}/firefox-overlay.nix");
-  in [
-    nightlyOverlay
-  ];
-  programs.firefox.package = pkgs.latest.firefox-nightly-bin;
   # List packages installed in system profile. To search, run:
   # $ nix search wget
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -136,7 +126,6 @@ programs.fish.enable = true;
   ntfs3g
   scrounge-ntfs
   github-desktop
-  firefox
   wget
   (steam.override { extraLibraries = pkgs: [ pkgs.gperftools ]; })
   pinta
@@ -145,9 +134,6 @@ programs.fish.enable = true;
   openjdk
   thunderbird
   google-chrome
-  oh-my-posh
-  oh-my-fish
-  etcher
   pavucontrol
   vlc
   libvlc
