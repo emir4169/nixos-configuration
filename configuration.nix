@@ -102,7 +102,6 @@ programs.steam.enable = true;
       prismlauncher
       unzip
       kitty
-      i3
       python311Packages.pillow
       bun
       qemu_full
@@ -131,7 +130,8 @@ programs.fish.enable = true;
   (steam.override { extraLibraries = pkgs: [ pkgs.gperftools ]; })
   pinta
   git
-  qtemu
+  i3
+  craftos-pc
   openjdk
   thunderbird
   google-chrome
