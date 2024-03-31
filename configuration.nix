@@ -123,8 +123,10 @@ programs.fish.enable = true;
   neovim
   gparted
   ntfs3g
+  zrythm
   scrounge-ntfs
   github-desktop
+  jack2
   exfat
   wget
   (steam.override { extraLibraries = pkgs: [ pkgs.gperftools ]; })
@@ -132,6 +134,7 @@ programs.fish.enable = true;
   git
   i3
   craftos-pc
+  gh
   openjdk
   thunderbird
   google-chrome
